@@ -60,11 +60,16 @@ nav ul li a:hover {
     text-align: center;
     padding: 40px 20px;
 
-    background: linear-gradient(
-        rgba(5, 31, 49, 0.75),
-        rgba(5, 31, 49, 0.75)
+   background:
+    linear-gradient(
+        rgba(3, 25, 45, 0.35),
+        rgba(3, 25, 45, 0.35)
     ),
-    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+    url("fondo-escudo-natural.png");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 
     background-size: cover;
     background-position: center;
@@ -201,5 +206,11 @@ css
     max-width: 700px;
     margin: 0 auto 30px;
     line-height: 1.6;
+}
+    .subtitulo {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
 }
 
