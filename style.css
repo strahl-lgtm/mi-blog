@@ -169,5 +169,37 @@ footer {
     .galeria {
         grid-template-columns: 1fr;
     }
+
+```css
+.portada {
+    max-width: 1000px;
+    padding: 40px;
+}
+
+.institucion {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.liceo {
+    color: white;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.linea {
+    width: 100px;
+    height: 4px;
+    background: #00aeea;
+    margin: 25px auto;
+}
+
+.descripcion {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
 }
 ```
