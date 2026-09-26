@@ -1,4 +1,4 @@
-```css
+css
 * {
     margin: 0;
     padding: 0;
@@ -170,7 +170,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-```css
+css
 .portada {
     max-width: 1000px;
     padding: 40px;
@@ -202,4 +202,4 @@ footer {
     margin: 0 auto 30px;
     line-height: 1.6;
 }
-```
+
