@@ -5,434 +5,448 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Escudo Natural | Liceo Naval de Guayaquil</title>
+    <title>ESCUDO NATURAL | Liceo Naval de Guayaquil</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Proyecto escolar Navi-Biorepel: investigación y elaboración de un repelente con esencias de citronela y clavo de olor.">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7f9;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(rgba(8, 43, 69, 0.88), rgba(8, 43, 69, 0.88)),
+                        url("fondo%20de%20blog%202.0.png") center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        header h1 {
+            font-size: clamp(2.2rem, 6vw, 4rem);
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.15rem;
+        }
+
+        nav {
+            background: #082b45;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 9px 12px;
+            border-radius: 5px;
+            transition: background 0.2s;
+        }
+
+        nav a:hover {
+            background: #00aeea;
+            color: #082b45;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px 18px;
+        }
+
+        .seccion {
+            background: white;
+            margin: 25px 0;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            scroll-margin-top: 85px;
+        }
+
+        h2 {
+            color: #082b45;
+            border-bottom: 3px solid #00aeea;
+            padding-bottom: 8px;
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            color: #087da8;
+            margin: 18px 0 8px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .destacado {
+            background: #e8f7fc;
+            border-left: 5px solid #00aeea;
+            padding: 16px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 22px;
+            margin-top: 25px;
+        }
+
+        .foto-evidencia {
+            background: #fff;
+            border: 1px solid #dce5eb;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .foto-evidencia img {
+            display: block;
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            background: #eef3f6;
+        }
+
+        .foto-evidencia p {
+            padding: 12px;
+            margin: 0;
+            text-align: center;
+            font-weight: bold;
+            color: #082b45;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #087da8;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .boton:hover {
+            background: #00aeea;
+            color: #082b45;
+        }
+
+        footer {
+            background: #082b45;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 45px 15px;
+            }
+
+            nav a {
+                padding: 7px 9px;
+                font-size: 0.9rem;
+            }
+
+            .seccion {
+                padding: 20px;
+            }
+
+            .foto-evidencia img {
+                height: 220px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- ENCABEZADO Y MENÚ -->
-    <header>
-        <nav>
-            <h2>ESCUDO NATURAL</h2>
+<header id="inicio">
+    <h1>ESCUDO NATURAL</h1>
+    <p>Uso adecuado del repelente para mosquitos</p>
+    <p>Proyecto de investigación escolar: Navi-Biorepel</p>
+</header>
 
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#introduccion">Introducción</a></li>
-                <li><a href="#objetivos">Objetivos</a></li>
-                <li><a href="#investigacion">Investigación</a></li>
-                <li><a href="#materiales">Materiales</a></li>
-                <li><a href="#metodologia">Metodología</a></li>
-                <li><a href="#producto">Producto</a></li>
-                <li><a href="#evidencias">Evidencias</a></li>
-                <li><a href="#opinion">Opinión</a></li>
-                <li><a href="#conclusion">Conclusión</a></li>
-                <li><a href="#fuentes">Fuentes</a></li>
-            </ul>
-        </nav>
-    </header>
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#introduccion">Introducción</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#investigacion">Investigación</a>
+    <a href="#materiales">Materiales</a>
+    <a href="#metodologia">Metodología</a>
+    <a href="#procedimiento">Procedimiento</a>
+    <a href="#evidencias">Evidencias</a>
+    <a href="#conclusion">Conclusión</a>
+</nav>
 
-    <!-- PORTADA -->
-    <section id="inicio" class="hero">
-        <div class="portada">
+<main>
 
-            <p class="institucion">
-                UNIDAD EDUCATIVA DE LAS FUERZAS ARMADAS
-            </p>
-
-            <h1 class="liceo">
-                LICEO NAVAL DE GUAYAQUIL
-            </h1>
-
-            <p>
-                «Cmdte. Rafael Andrade Lalama»
-            </p>
-
-            <div class="linea"></div>
-
-            <h2>ESCUDO NATURAL</h2>
-
-            <h3 class="subtitulo">
-                Uso adecuado del repelente para mosquitos
-            </h3>
-
-            <p class="descripcion">
-                Proyecto de investigación sobre la elaboración
-                experimental de un repelente a base de esencias
-                de citronela y clavo de olor.
-            </p>
-
-            <a href="#introduccion" class="boton">
-                Conocer el proyecto
-            </a>
-
+    <section id="introduccion" class="seccion">
+        <h2>Introducción</h2>
+        <p>
+            Los mosquitos pueden causar molestias y algunos pueden transmitir
+            enfermedades. Por esta razón, es importante conocer las medidas
+            de prevención y el uso responsable de los repelentes.
+        </p>
+        <p>
+            El proyecto <strong>Navi-Biorepel</strong>, presentado en el blog
+            Escudo Natural, investiga la elaboración de una propuesta de
+            repelente utilizando esencias de citronela y clavo de olor.
+        </p>
+        <div class="destacado">
+            <strong>Idea principal:</strong> investigar alternativas y promover
+            la prevención frente a las picaduras de mosquitos.
         </div>
     </section>
 
-    <!-- INTRODUCCIÓN -->
-    <section id="introduccion" class="seccion">
-        <h2>Introducción</h2>
-
-        <p>
-            Los mosquitos son insectos que pueden causar molestias
-            mediante sus picaduras y algunas especies pueden transmitir
-            enfermedades. Por esta razón, es importante conocer las
-            medidas de prevención y las alternativas disponibles para
-            protegernos de ellos.
-        </p>
-
-        <p>
-            El proyecto Escudo Natural se enfoca en la elaboración
-            experimental de Navi-Biorepel, una mezcla preparada con
-            esencias de citronela y clavo de olor, junto con alcohol.
-            Mediante esta experiencia se busca conocer el proceso de
-            preparación de una alternativa de origen vegetal.
-        </p>
-
-        <p>
-            Esta elaboración tiene fines educativos. Su eficacia y
-            seguridad como repelente deben comprobarse antes de
-            recomendar su uso sobre la piel.
-        </p>
-    </section>
-
-    <!-- OBJETIVOS -->
     <section id="objetivos" class="seccion">
         <h2>Objetivos</h2>
 
         <h3>Objetivo general</h3>
-
         <p>
-            Elaborar experimentalmente Navi-Biorepel utilizando
-            esencias de citronela y clavo de olor, documentando
-            los materiales y las etapas del proceso.
+            Investigar la elaboración de un repelente a base de esencias de
+            citronela y clavo de olor, fomentando el conocimiento sobre
+            prevención y uso responsable de estos productos.
         </p>
 
         <h3>Objetivos específicos</h3>
-
         <ul>
-            <li>
-                Identificar las propiedades conocidas de la citronela
-                y el clavo de olor en el contexto de los repelentes.
-            </li>
-
-            <li>
-                Reconocer los materiales e instrumentos utilizados
-                durante la elaboración.
-            </li>
-
-            <li>
-                Registrar mediante fotografías las diferentes etapas
-                de la preparación.
-            </li>
-
-            <li>
-                Valorar la importancia de la prevención de las
-                picaduras de mosquitos y del uso responsable
-                de los repelentes.
-            </li>
+            <li>Conocer las características de la citronela y el clavo de olor.</li>
+            <li>Identificar los materiales utilizados en el proyecto.</li>
+            <li>Registrar las etapas de preparación del producto.</li>
+            <li>Documentar el proceso mediante fotografías.</li>
+            <li>Promover medidas seguras para prevenir las picaduras.</li>
         </ul>
     </section>
 
-    <!-- INVESTIGACIÓN -->
     <section id="investigacion" class="seccion">
         <h2>Investigación</h2>
 
         <h3>¿Qué son los repelentes?</h3>
-
         <p>
-            Los repelentes son productos diseñados para ayudar a
-            evitar que insectos como los mosquitos se acerquen
-            o piquen a las personas. Pueden contener ingredientes
-            sintéticos o sustancias de origen vegetal.
+            Los repelentes son productos que ayudan a mantener alejados a
+            insectos como los mosquitos. Su efectividad depende de sus
+            ingredientes, su concentración y la forma de aplicación.
         </p>
 
-        <h3>La citronela</h3>
-
+        <h3>Esencia de citronela</h3>
         <p>
-            La citronela es una planta aromática de la que se obtiene
-            una esencia utilizada en algunos productos repelentes.
-            Su aroma se asocia con el control de insectos, aunque
-            la eficacia depende de la formulación y de las condiciones
-            de uso.
+            La citronela es una planta aromática de la que se obtiene una
+            esencia utilizada en algunos productos repelentes. Su aroma
+            puede ayudar a mantener alejados a ciertos insectos, aunque
+            su eficacia y duración pueden variar.
         </p>
 
-        <h3>El clavo de olor</h3>
-
+        <h3>Esencia de clavo de olor</h3>
         <p>
             El clavo de olor es una especia aromática que contiene
-            eugenol, una sustancia presente en su aceite esencial.
-            Se investiga por distintas propiedades, incluida su
-            posible actividad frente a algunos insectos.
+            compuestos como el eugenol. Se estudia por sus propiedades
+            aromáticas y su posible actividad frente a algunos insectos.
         </p>
 
-        <h3>Importancia de la prevención</h3>
-
-        <p>
-            Para reducir las picaduras se recomienda eliminar el
-            agua estancada, utilizar mosquiteros y vestir ropa
-            protectora cuando sea necesario. Para proteger la piel,
-            deben preferirse repelentes cuya eficacia y seguridad
-            estén comprobadas y seguir sus instrucciones de uso.
-        </p>
+        <div class="destacado">
+            <strong>Precaución:</strong> que un ingrediente sea natural no
+            significa que sea automáticamente seguro. No apliques una mezcla
+            casera sobre la piel sin comprobar su seguridad. Para protegerte
+            de los mosquitos, utiliza un repelente autorizado y sigue su etiqueta.
+        </div>
     </section>
 
-    <!-- MATERIALES -->
     <section id="materiales" class="seccion">
         <h2>Materiales</h2>
-
-        <p>
-            Para la preparación experimental de Navi-Biorepel
-            se utilizaron los siguientes materiales:
-        </p>
-
+        <p>Para el desarrollo del proyecto se utilizaron los materiales necesarios para preparar y presentar la propuesta:</p>
         <ul>
-            <li>10 ml de esencia de citronela.</li>
-            <li>10 ml de esencia de clavo de olor.</li>
-            <li>10 ml de alcohol.</li>
-            <li>Probetas para medir los líquidos.</li>
-            <li>Recipiente para realizar la mezcla.</li>
-            <li>Varilla para mezclar.</li>
-            <li>Papel filtro para retener posibles impurezas.</li>
-            <li>Agua destilada para enjuagar las probetas y evitar residuos de mezclas anteriores.</li>
-            <li>Frasco con atomizador para contener el producto terminado.</li>
+            <li>Esencia de citronela.</li>
+            <li>Esencia de clavo de olor.</li>
+            <li>Recipiente para la preparación.</li>
+            <li>Utensilios utilizados durante la elaboración.</li>
+            <li>Envase para guardar la muestra.</li>
+            <li>Materiales de protección e higiene necesarios.</li>
         </ul>
-
         <p>
-            Las cantidades indicadas corresponden a los volúmenes
-            utilizados durante la experiencia.
+            La lista debe coincidir con los materiales que realmente se
+            utilizaron durante el proyecto.
         </p>
     </section>
 
-    <!-- METODOLOGÍA -->
     <section id="metodologia" class="seccion">
         <h2>Metodología</h2>
-
         <p>
-            El proyecto se desarrolló mediante una experiencia
-            práctica de preparación y observación. Se midieron
-            las cantidades de las esencias y del alcohol, se
-            combinaron los componentes y se utilizó papel filtro
-            para retirar posibles impurezas.
+            El proyecto se desarrolló mediante una metodología práctica y
+            descriptiva. Primero se investigaron las características de las
+            esencias de citronela y clavo de olor; después se organizaron
+            los materiales y se registraron las etapas de elaboración.
         </p>
+        <p>
+            Finalmente, se tomaron fotografías como evidencias del trabajo
+            y se organizó la información para presentar los resultados
+            en este blog.
+        </p>
+    </section>
 
-        <h3>Preparación de Navi-Biorepel</h3>
-
+    <section id="procedimiento" class="seccion">
+        <h2>Procedimiento</h2>
         <ol>
-            <li>
-                Se reunieron y organizaron los materiales e
-                instrumentos necesarios para la experiencia.
-            </li>
-
-            <li>
-                Se midieron 10 ml de esencia de citronela con
-                ayuda de una probeta.
-            </li>
-
-            <li>
-                Se midieron 10 ml de esencia de clavo de olor.
-            </li>
-
-            <li>
-                Se midieron 10 ml de alcohol.
-            </li>
-
-            <li>
-                Se combinaron los componentes en un recipiente
-                para obtener la mezcla experimental.
-            </li>
-
-            <li>
-                Se empleó papel filtro para retener posibles
-                impurezas presentes en la mezcla.
-            </li>
-
-            <li>
-                Se utilizó agua destilada para enjuagar las
-                probetas y evitar que quedaran residuos.
-            </li>
-
-            <li>
-                Finalmente, se colocó la mezcla en el recipiente
-                destinado a contener el producto y se registró
-                el resultado mediante fotografías.
-            </li>
+            <li>Investigar las características de las esencias seleccionadas.</li>
+            <li>Reunir y organizar los materiales utilizados en el proyecto.</li>
+            <li>Preparar la muestra siguiendo las indicaciones y medidas de seguridad establecidas para la actividad.</li>
+            <li>Guardar la muestra en un envase adecuado y debidamente identificado.</li>
+            <li>Fotografiar las diferentes etapas del trabajo.</li>
+            <li>Organizar las fotografías y redactar las conclusiones.</li>
         </ol>
-
         <p>
-            <strong>Nota de seguridad:</strong> esta preparación
-            es experimental. No debe aplicarse sobre la piel ni
-            utilizarse como protección comprobada contra mosquitos
-            sin una evaluación adecuada de su seguridad y eficacia.
-            El alcohol es inflamable y debe mantenerse alejado
-            del fuego y de fuentes de calor.
+            <strong>Nota:</strong> este apartado describe las etapas generales
+            del proyecto. Si necesitas explicar las cantidades exactas o la
+            mezcla realizada, añade únicamente los datos que utilizaron
+            realmente en clase y que hayan sido verificados como seguros.
         </p>
     </section>
 
-    <!-- PRODUCTO -->
-    <section id="producto" class="seccion">
-        <h2>Producto: Navi-Biorepel</h2>
-
+    <section id="evidencias" class="seccion">
+        <h2>Evidencias de la elaboración</h2>
         <p>
-            Navi-Biorepel es el nombre asignado al producto
-            experimental elaborado para el proyecto Escudo Natural.
-            Su preparación utiliza esencia de citronela, esencia
-            de clavo de olor y alcohol.
+            Fotografías del proceso de elaboración de Navi-Biorepel.
+            La última evidencia corresponde al producto terminado.
         </p>
 
-        <p>
-            El producto terminado representa el resultado de la
-            experiencia práctica y permite documentar la aplicación
-            de los conocimientos investigados sobre las esencias
-            vegetales y los repelentes.
-        </p>
+        <div class="galeria">
 
-        <p>
-            La elaboración de una mezcla no demuestra por sí sola
-            que sea eficaz o segura para proteger a las personas
-            de las picaduras. Se necesitarían pruebas apropiadas
-            para establecer esas características.
-        </p>
+            <div class="foto-evidencia">
+                <img src="evidencia1.jpeg"
+                     alt="Evidencia 1 de la elaboración"
+                     loading="lazy"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/eef3f6/082b45?text=Evidencia+1';">
+                <p>Evidencia 1: Elaboración</p>
+            </div>
+
+            <div class="foto-evidencia">
+                <img src="evidencia2.jpeg"
+                     alt="Evidencia 2 de la elaboración"
+                     loading="lazy"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/eef3f6/082b45?text=Evidencia+2';">
+                <p>Evidencia 2: Elaboración</p>
+            </div>
+
+            <div class="foto-evidencia">
+                <img src="evidencia3.jpeg"
+                     alt="Evidencia 3 de la elaboración"
+                     loading="lazy"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/eef3f6/082b45?text=Evidencia+3';">
+                <p>Evidencia 3: Elaboración</p>
+            </div>
+
+            <div class="foto-evidencia">
+                <img src="evidencia4.jpeg"
+                     alt="Evidencia 4 de la elaboración"
+                     loading="lazy"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/eef3f6/082b45?text=Evidencia+4';">
+                <p>Evidencia 4: Elaboración</p>
+            </div>
+
+            <div class="foto-evidencia">
+                <img src="evidencia5.jpeg"
+                     alt="Evidencia 5 de la elaboración"
+                     loading="lazy"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/eef3f6/082b45?text=Evidencia+5';">
+                <p>Evidencia 5: Elaboración</p>
+            </div>
+
+            <div class="foto-evidencia">
+                <img src="evidencia6.jpeg"
+                     alt="Producto terminado Navi-Biorepel"
+                     loading="lazy"
+                     onerror="this.onerror=null;this.src='https://placehold.co/600x400/eef3f6/082b45?text=Producto+final';">
+                <p>Evidencia 6: Producto final Navi-Biorepel</p>
+            </div>
+
+        </div>
     </section>
 
-    <!-- EVIDENCIAS -->
-       
-<section id="evidencias" class="seccion">
-    <h2>Evidencias de la elaboración</h2>
-
-    <p>
-        Fotografías del proceso de elaboración de Navi-Biorepel.
-        La última evidencia muestra el producto terminado.
-    </p>
-
-    <div class="galeria">
-
-        <div class="foto-evidencia">
-            <img src="./evidencia1.jpeg" alt="Evidencia 1 de la elaboración">
-            <p>Evidencia 1: Elaboración</p>
-        </div>
-
-        <div class="foto-evidencia">
-            <img src="./evidencia2.jpeg" alt="Evidencia 2 de la elaboración">
-            <p>Evidencia 2: Elaboración</p>
-        </div>
-
-        <div class="foto-evidencia">
-            <img src="./evidencia3.jpeg" alt="Evidencia 3 de la elaboración">
-            <p>Evidencia 3: Elaboración</p>
-        </div>
-
-        <div class="foto-evidencia">
-            <img src="./evidencia4.jpeg" alt="Evidencia 4 de la elaboración">
-            <p>Evidencia 4: Elaboración</p>
-        </div>
-
-        <div class="foto-evidencia">
-            <img src="./evidencia5.jpeg" alt="Evidencia 5 de la elaboración">
-            <p>Evidencia 5: Elaboración</p>
-        </div>
-
-        <div class="foto-evidencia">
-            <img src="./evidencia6.jpeg" alt="Producto terminado Navi-Biorepel">
-            <p>Evidencia 6: Producto final Navi-Biorepel</p>
-        </div>
-
-    </div>
-</section>
-
-    <!-- OPINIÓN -->
     <section id="opinion" class="seccion">
-        <h2>Opinión personal</h2>
-
+        <h2>Importancia del proyecto</h2>
         <p>
-            Considero que este proyecto fue una oportunidad para
-            investigar sobre las esencias vegetales y conocer
-            cómo se realiza una preparación experimental. Además,
-            permitió practicar la medición de líquidos, la
-            organización de materiales y el registro fotográfico
-            de una actividad científica.
-        </p>
-
-        <p>
-            También aprendí que un producto elaborado con
-            ingredientes naturales no necesariamente es seguro
-            o eficaz. Por ello, es importante investigar y comprobar
-            sus propiedades antes de recomendar su utilización.
+            Este proyecto permitió relacionar la investigación científica
+            con una actividad práctica. También ayudó a comprender la
+            importancia de documentar un procedimiento, trabajar de forma
+            organizada y considerar la seguridad al utilizar productos
+            destinados a mantener alejados a los insectos.
         </p>
     </section>
 
-    <!-- CONCLUSIÓN -->
     <section id="conclusion" class="seccion">
         <h2>Conclusión</h2>
-
         <p>
-            El proyecto Escudo Natural permitió elaborar de manera
-            experimental Navi-Biorepel a partir de esencias de
-            citronela y clavo de olor, junto con alcohol. Durante
-            la experiencia se utilizaron instrumentos de medición
-            y papel filtro, y se registraron las etapas del proceso
-            mediante evidencias fotográficas.
+            La investigación sobre Navi-Biorepel permitió conocer más acerca
+            de las esencias de citronela y clavo de olor y su estudio como
+            posibles ingredientes de productos repelentes. La elaboración
+            de la muestra y el registro fotográfico ayudaron a organizar y
+            presentar el trabajo.
         </p>
-
         <p>
-            La investigación permitió comprender la importancia
-            de estudiar los componentes de un producto y de
-            diferenciar una preparación experimental de un
-            repelente cuya eficacia y seguridad ya han sido
-            comprobadas.
+            Sin embargo, para afirmar que la preparación repele mosquitos
+            eficazmente o que es segura para la piel, se necesitan pruebas
+            adecuadas. Por eso, se recomienda utilizar productos repelentes
+            autorizados y seguir sus instrucciones.
         </p>
     </section>
 
-    <!-- FUENTES -->
     <section id="fuentes" class="seccion">
-        <h2>Fuentes de información</h2>
-
+        <h2>Fuentes de consulta</h2>
         <ul>
             <li>
-                <a
-                    href="https://www.cdc.gov/mosquitoes/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Centers for Disease Control and Prevention (CDC):
-                    información sobre mosquitos y prevención.
+                <a href="https://www.cdc.gov/mosquitoes/prevention/index.html" target="_blank" rel="noopener noreferrer">
+                    CDC: prevención de las picaduras de mosquitos
                 </a>
             </li>
-
             <li>
-                <a
-                    href="https://www.epa.gov/insect-repellents"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    United States Environmental Protection Agency (EPA):
-                    información sobre repelentes de insectos.
+                <a href="https://www.epa.gov/insect-repellents" target="_blank" rel="noopener noreferrer">
+                    Agencia de Protección Ambiental de Estados Unidos: repelentes de insectos
                 </a>
-            </li>
-
-            <li>
-                Investigación y observaciones realizadas durante
-                la elaboración experimental del proyecto
-                Navi-Biorepel.
             </li>
         </ul>
     </section>
 
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        <p>
-            © 2026 ESCUDO NATURAL | Proyecto educativo
-        </p>
+</main>
 
-        <p>
-            Liceo Naval de Guayaquil
-        </p>
-
-        <p>
-            Navi-Biorepel: investigación y elaboración experimental
-        </p>
-    </footer>
+<footer>
+    <p><strong>ESCUDO NATURAL</strong></p>
+    <p>Proyecto escolar Navi-Biorepel</p>
+    <p>Liceo Naval de Guayaquil</p>
+    <p>Uso responsable de repelentes y prevención de picaduras</p>
+</footer>
 
 </body>
 </html>
